@@ -20,53 +20,96 @@ namespace TriangleSAV
 
         private void resbut_Click(object sender, EventArgs e)
         {
+            int i, j, k;
+            if (!int.TryParse(left.Text, out i))
+            {
+                MessageBox.Show("Нельзя использовать символы, отличные от арабских цифр!");
+                reslab.Text = "Нет данных.";
+                return;
+            }
+            else if (!int.TryParse(bottom.Text, out i))
+                {
+                    MessageBox.Show("Нельзя использовать символы, отличные от арабских цифр!");
+                    reslab.Text = "Нет данных.";
+                    return;
+                }
+            else if (!int.TryParse(right.Text, out i))
+            {
+                MessageBox.Show("Нельзя использовать символы, отличные от арабских цифр!");
+                reslab.Text = "Нет данных.";
+                return;
+            }
             if (string.IsNullOrEmpty(left.Text) || string.IsNullOrEmpty(bottom.Text) || string.IsNullOrEmpty(right.Text))
             {
-                MessageBox.Show("Нету значений!");
+                MessageBox.Show("Нет значений!");
                 reslab.Text = "Нет данных.";
+                left.Text = "";
+                bottom.Text = "";
+                right.Text = "";
             }
             else if (Convert.ToInt32(left.Text) == 0 || Convert.ToInt32(bottom.Text) == 0 || Convert.ToInt32(right.Text) == 0)
             {
-                MessageBox.Show("Нету значений!");
+                MessageBox.Show("Нет значений!");
                 reslab.Text = "Нет данных.";
+                left.Text = "";
+                bottom.Text = "";
+                right.Text = "";
             }
             else
             {
                 double a = Convert.ToInt32(left.Text), b = Convert.ToInt32(bottom.Text), c = Convert.ToInt32(right.Text);
-                if (a == b && a == c && b == c)
+                if (a <= 0 || b <= 0 || c <=0 )
                 {
-                    if (a == 0 || b == 0 || c == 0)
-                    {
-                        MessageBox.Show("Нету значений!");
-                        reslab.Text = "Нет данных.";
-                    }
-                    else
-                    {
-                        reslab.Text = "Треугольник равносторонний.";
-                    }
+                    MessageBox.Show("Отрицательного значения не существует!");
+                    reslab.Text = "Нет данных.";
                 }
-                else if (a == c && a != b && b != c)
+                else
                 {
-                    if (a == 0 || b == 0 || c == 0)
+                    if (a == b && a == c && b == c)
                     {
-                        MessageBox.Show("Нету значений!");
-                        reslab.Text = "Нет данных.";
+                        if (a == 0 || b == 0 || c == 0)
+                        {
+                            MessageBox.Show("Нет значений!");
+                            reslab.Text = "Нет данных.";
+                        }
+                        else
+                        {
+                            reslab.Text = "Треугольник равносторонний.";
+                        }
                     }
-                    else
+                    else if (a == c && a != b && b != c)
                     {
-                        reslab.Text = "Треугольник равнобедренный.";
+                        if (a == 0 || b == 0 || c == 0)
+                        {
+                            MessageBox.Show("Нет значений!");
+                            reslab.Text = "Нет данных.";
+                        }
+                        else if ((a + b <= c) || (a + c <= b) || (b + c <= a))
+                        {
+                            MessageBox.Show("Такого треугольника не существует!");
+                            reslab.Text = "Не существует.";
+                        }
+                        else
+                        {
+                            reslab.Text = "Треугольник равнобедренный.";
+                        }
                     }
-                }
-                else if (a != c && a != b && b != c)
-                {
-                    if (a == 0 || b == 0 || c == 0)
+                    else if (a != c && b != c)
                     {
-                        MessageBox.Show("Нету значений!");
-                        reslab.Text = "Нет данных.";
-                    }
-                    else
-                    {
-                        reslab.Text = "Треугольник разносторонний.";
+                        if (a == 0 || b == 0 || c == 0)
+                        {
+                            MessageBox.Show("Нет значений!");
+                            reslab.Text = "Нет данных.";
+                        }
+                        else if ((a + b <= c) || (a + c <= b) || (b + c <= a))
+                        {
+                            MessageBox.Show("Такого треугольника не существует!");
+                            reslab.Text = "Не существует.";
+                        }
+                        else
+                        {
+                            reslab.Text = "Треугольник разносторонний.";
+                        }
                     }
                 }
             }    
@@ -74,10 +117,7 @@ namespace TriangleSAV
 
         private void left_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
+
         }
     }
 }
