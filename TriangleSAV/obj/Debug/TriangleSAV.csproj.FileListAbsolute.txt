@@ -1,0 +1,10 @@
+C:\Users\stud\Desktop\savva\TriangleSAV\bin\Debug\TriangleSAV.exe.config
+C:\Users\stud\Desktop\savva\TriangleSAV\bin\Debug\TriangleSAV.exe
+C:\Users\stud\Desktop\savva\TriangleSAV\bin\Debug\TriangleSAV.pdb
+C:\Users\stud\Desktop\savva\TriangleSAV\obj\Debug\TriangleSAV.csproj.AssemblyReference.cache
+C:\Users\stud\Desktop\savva\TriangleSAV\obj\Debug\TriangleSAV.TriangleForms.resources
+C:\Users\stud\Desktop\savva\TriangleSAV\obj\Debug\TriangleSAV.Properties.Resources.resources
+C:\Users\stud\Desktop\savva\TriangleSAV\obj\Debug\TriangleSAV.csproj.GenerateResource.cache
+C:\Users\stud\Desktop\savva\TriangleSAV\obj\Debug\TriangleSAV.csproj.CoreCompileInputs.cache
+C:\Users\stud\Desktop\savva\TriangleSAV\obj\Debug\TriangleSAV.exe
+C:\Users\stud\Desktop\savva\TriangleSAV\obj\Debug\TriangleSAV.pdb
