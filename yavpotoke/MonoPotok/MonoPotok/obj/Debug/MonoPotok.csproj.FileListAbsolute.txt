@@ -1,0 +1,8 @@
+C:\Users\stud\Desktop\алексеевприкол\yavpotoke\MonoPotok\MonoPotok\bin\Debug\MonoPotok.exe.config
+C:\Users\stud\Desktop\алексеевприкол\yavpotoke\MonoPotok\MonoPotok\bin\Debug\MonoPotok.exe
+C:\Users\stud\Desktop\алексеевприкол\yavpotoke\MonoPotok\MonoPotok\bin\Debug\MonoPotok.pdb
+C:\Users\stud\Desktop\алексеевприкол\yavpotoke\MonoPotok\MonoPotok\obj\Debug\MonoPotok.csproj.AssemblyReference.cache
+C:\Users\stud\Desktop\алексеевприкол\yavpotoke\MonoPotok\MonoPotok\obj\Debug\MonoPotok.csproj.SuggestedBindingRedirects.cache
+C:\Users\stud\Desktop\алексеевприкол\yavpotoke\MonoPotok\MonoPotok\obj\Debug\MonoPotok.csproj.CoreCompileInputs.cache
+C:\Users\stud\Desktop\алексеевприкол\yavpotoke\MonoPotok\MonoPotok\obj\Debug\MonoPotok.exe
+C:\Users\stud\Desktop\алексеевприкол\yavpotoke\MonoPotok\MonoPotok\obj\Debug\MonoPotok.pdb
